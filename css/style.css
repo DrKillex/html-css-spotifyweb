@@ -10,6 +10,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#plus-symbol {
+    font-size: 40px;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
 /* common */
 
 body {
@@ -47,6 +60,11 @@ footer {
     display: none;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 li {
     list-style: none;
 }
@@ -59,11 +77,16 @@ a {
 /* main */
 
 #side nav {
-    position: relative;
+    height: 100%;
 }
 
-#side nav a img {
+#side .nav-top a img {
     max-width: 40px;
+    width: 100%;
+}
+
+#side .nav-foot a img {
+    max-width: 1rem;
     width: 100%;
 }
 
@@ -73,18 +96,46 @@ a {
     gap: .625rem;
 }
 
-#side nav .flex {
+#side .flex {
     flex-wrap: wrap;
 }
 
 #side .nav-center .scroll-nav {
-    overflow: scroll;
-    height: 300px;
+    overflow-y: auto;
+    min-width: 0;
+    flex-direction: column;
 }
 
 #side .nav-center div:not(:last-child) {
     margin-bottom: .625rem;
 }
+
+.nav-foot {
+    align-self: flex-end;
+}
+
+.nav-foot hr {
+    margin: .625rem 0;
+}
+
+#main-section {
+    padding: 2.5rem;
+}
+
+#main-section .flex {
+    flex-wrap: wrap;
+}
+
+#main-section nav {
+    justify-content: center;
+}
+
+#main-section .col {
+    padding: 10px;
+    width: calc(100% / 2);
+    text-align: center;
+}
+
 
 @media screen and (min-width: 640px) {
     #main-section {
@@ -99,7 +150,11 @@ a {
     }
 
     .wide-nav {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        flex-basis: 0;
+        flex-grow: 1;
     }
 
     .small-logo {
@@ -115,19 +170,16 @@ a {
         width: 100%;
     }
     
-    #plus-symbol {
-        font-size: 40px;
-        color: black;
-        background-color: white;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        vertical-align: middle;
-        font-weight: 700;
+}
+
+@media screen and (min-width: 878px) {
+    #main-section .col {
+        width: calc(100% / 4);
     }
+}
 
-
-
+@media screen and (min-width: 1200px) {
+    #main-section .col {
+        width: calc(100% / 6);
+    }
 }
