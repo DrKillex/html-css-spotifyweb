@@ -12,13 +12,14 @@ body {
 
 /* common */
 
+body {
+    flex-wrap: wrap;
+}
+
 footer {
     height: 5.625rem;
     width: 100%;
     background-color: #282828;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     color: white;
 }
 
@@ -26,9 +27,6 @@ footer {
     height: calc(100vh - 5.625rem);
     width: 3.125rem;
     background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
     color: white;
     padding: .4375rem;
 }
@@ -37,9 +35,6 @@ footer {
     height: calc(100vh - 5.625rem);
     width: calc(100% - 3.125rem);
     background-color: #141922;
-    position: absolute;
-    top: 0;
-    right: 0;
     overflow: scroll;
     color: white;
 }
@@ -63,6 +58,10 @@ a {
 
 /* main */
 
+#side nav {
+    position: relative;
+}
+
 #side nav a img {
     max-width: 40px;
     width: 100%;
@@ -78,9 +77,9 @@ a {
     flex-wrap: wrap;
 }
 
-#side .nav-center {
+#side .nav-center .scroll-nav {
     overflow: scroll;
-    height: 40%;
+    height: 300px;
 }
 
 #side .nav-center div:not(:last-child) {
@@ -100,7 +99,7 @@ a {
     }
 
     .wide-nav {
-        display: inline-block;
+        display: block;
     }
 
     .small-logo {
