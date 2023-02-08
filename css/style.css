@@ -142,10 +142,22 @@ a {
     right: 0;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 3.75rem;
+}
+
+.btn {
+    border: 2px solid white;
+    padding: .9375rem 1.25rem;
+    border-radius: 2.5rem;
 }
 
 #main-section nav {
     justify-content: center;
+}
+
+#main-section nav div {
+    margin: 0 1.25rem 1.875rem;
+    text-transform: uppercase;
 }
 
 #main-section .col {
@@ -237,10 +249,12 @@ footer .foot-col.foot-mid {
 footer .foot-col.foot-right {
     margin-left: auto;
     width: 20%;
+    justify-content: flex-end;
 }
 
 footer .foot-col.foot-mid {
     flex-direction: column;
+    width: 50%;
 }
 
 footer .foot-col .album-info .album-img {
@@ -266,4 +280,40 @@ footer .foot-col .album-info .album-img img {
     justify-content: center;
     margin-left: 10px;
     flex-direction: column;
+}
+
+.bar {
+    height: 4px;
+    max-width: 60%;
+    background-color: gray;
+    flex-grow: 1;
+    margin:0 .9375rem;
+}
+
+.btn-player, .bar-player {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-player div:nth-child(3) {
+    font-size: 30px;
+}
+
+.btn-player div {
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 878px) {
+
+    .nomi .nome-brano {
+        flex-direction: row;
+    }
+    
+    .album-icon {
+        align-items: center;
+        margin-left: 10px;
+        flex-direction: row;
+    }
+
 }
