@@ -198,3 +198,58 @@ a {
         max-height: 12.5rem;
     }
 }
+
+/* footer */
+
+footer {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.foot-col.flex {
+    align-items: center;
+}
+
+footer .foot-col.foot-left {
+    margin-right: auto;
+    width: 20%;
+}
+
+footer .foot-col.foot-mid {
+    margin: 0 auto;
+}
+
+footer .foot-col.foot-right {
+    margin-left: auto;
+    width: 20%;
+}
+
+footer .foot-col.foot-mid {
+    flex-direction: column;
+}
+
+footer .foot-col .album-info .album-img {
+    align-items: center;
+}
+
+footer .foot-col .album-info .album-img img {
+    max-width: 3.5625rem;
+    min-width: 1.875rem;
+}
+
+.nomi {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.nomi .nome-brano {
+    flex-direction: column;
+}
+
+.album-icon {
+    justify-content: center;
+    margin-left: 10px;
+    flex-direction: column;
+}
