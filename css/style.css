@@ -46,6 +46,8 @@ footer {
     background-color: #141922;
     overflow: scroll;
     color: white;
+    padding: 2.5rem;
+    padding-top: 6.25rem;
 }
 
 .flex {
@@ -127,12 +129,19 @@ a {
     margin: .625rem 0;
 }
 
-#main-section {
-    padding: 2.5rem;
-}
-
 #main-section .flex {
     flex-wrap: wrap;
+}
+
+.fixed-bar {
+    height: 5.625rem;
+    width: calc(100% - 3.125rem);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #main-section nav {
@@ -164,6 +173,11 @@ a {
         height: calc(100vh - 5.625rem);
         width: 14.375rem;
         padding: 15px;
+    }
+
+    .fixed-bar {
+        height: 5.625rem;
+        width: calc(100% - 14.375rem);
     }
 
     .wide-nav {
