@@ -27,6 +27,7 @@ body {
 
 body {
     flex-wrap: wrap;
+    height: 100vh;
 }
 
 footer {
@@ -37,7 +38,7 @@ footer {
 }
 
 #side {
-    height: calc(100vh - 5.625rem);
+    height: calc(100% - 5.625rem);
     width: 3.125rem;
     background-color: black;
     color: white;
@@ -45,7 +46,7 @@ footer {
 }
 
 #main-section {
-    height: calc(100vh - 5.625rem);
+    height: calc(100% - 5.625rem);
     width: calc(100% - 3.125rem);
     background-color: #141922;
     overflow: scroll;
@@ -78,6 +79,7 @@ a {
 
 #side nav {
     height: 100%;
+    overflow-y: hidden;
 }
 
 #side .nav-top a img {
@@ -100,10 +102,14 @@ a {
     flex-wrap: wrap;
 }
 
+#side .nav-center {
+
+}
+
 #side .nav-center .scroll-nav {
     overflow-y: auto;
-    min-width: 0;
-    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 #side .nav-center div:not(:last-child) {
