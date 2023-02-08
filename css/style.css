@@ -230,7 +230,7 @@ a {
 footer {
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: .625rem;
 }
 
 .foot-col.flex {
@@ -290,6 +290,11 @@ footer .foot-col .album-info .album-img img {
     margin:0 .9375rem;
 }
 
+.foot-col.foot-right .bar {
+    max-width: 100%;
+    margin: 0;
+}
+
 .btn-player, .bar-player {
     width: 100%;
     justify-content: center;
@@ -302,6 +307,10 @@ footer .foot-col .album-info .album-img img {
 
 .btn-player div {
     margin: 0 10px;
+}
+
+.foot-col.foot-right div:not(:last-child) {
+    margin-right: .3125rem;
 }
 
 @media screen and (min-width: 878px) {
