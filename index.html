@@ -26,19 +26,19 @@
                         <li>
                             <a href="#">
                                 <img src="img/home.svg" alt="home">
-                                <div class="wide-nav">testo2</div>
+                                <div class="wide-nav">home</div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="img/search.svg" alt="search">
-                                <div class="wide-nav">testo2</div>
+                                <div class="wide-nav">cerca</div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="img/libreria.svg" alt="librery">
-                                <div class="wide-nav">testo2</div>
+                                <div class="wide-nav">la tua libreria</div>
                             </a>
                         </li>
                     </ul>
@@ -46,19 +46,41 @@
                 <div class="nav-center wide-nav">
                     <h3>PLAYLIST</h3>
                     <div>
-                        <div id="plus-symbol">+</div>
-                        crea playlist
+                        <a href="#">
+                            <div id="plus-symbol">+</div>
+                            crea playlist
+                        </a>                     
                     </div>
                     <div class="scroll-nav">
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
-                        <div>nome playlist</div>
+                        <ul>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">nome playlist</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="nav-foot">
@@ -68,8 +90,8 @@
                     </a>
                     <hr class="wide-nav">
                     <a class="flex">
-                        <img src="img/profile.svg" alt="download">
-                        <div class="wide-nav">installa app</div>
+                        <img src="img/profile.svg" alt="download" class="user">
+                        <div class="wide-nav">johnny lo smilzo</div>
                     </a>
                 </div>
             </nav>
@@ -103,7 +125,7 @@
                 </div>
             </nav>
             <section class="recent">
-                <h1>recenly played</h1>
+                <h2>recenly played</h2>
                 <div class="row flex">
                     <div class="col">
                         <a href="#">
@@ -204,7 +226,7 @@
                 </div>
             </section>        
             <section class="recent">
-                <h1>recenly played</h1>
+                <h2>recenly played</h2>
                 <div class="row flex">
                     <div class="col">
                         <a href="#">
@@ -241,7 +263,7 @@
                 </div>
             </section>
             <section class="artist">
-                <h1>recenly played</h1>
+                <h2>recenly played</h2>
                 <div class="row flex">
                     <div class="col">
                         <a href="#">
@@ -311,7 +333,9 @@
             </div>
             <div class="flex bar-player">
                 <div>0.25</div>
-                <div class="bar small"></div>
+                <div class="bar small">
+                    <div class="bar-ball"></div>
+                </div>               
                 <div class="bar"></div>
                 <div>4.35</div>
             </div>
@@ -320,8 +344,13 @@
             <div><i class="fa-solid fa-list-ul"></i></div>
             <div><i class="fa-sharp fa-solid fa-display"></i></div>
             <div><i class="fa-solid fa-volume-high"></i></div>
-            <div class="bar small"></div>
-            <div class="bar"></div>
+            <div class="bar-player flex">
+                <div class="bar small">
+                    <div class="bar-ball"></div>
+                </div>
+                <div class="bar"></div> 
+            </div>
+            
         </div>
     </footer>
     <!-- /footer -->
